@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Montserrat:wght@200;400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/****navbar****/
+#header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: rgb(178, 215, 50, .8);
+  z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav-bar {
+  background-color: rgba(178, 215, 50, .8);
+	color: rgba(255, 255, 255, 1);
+  align-items: center;
+  justify-content: space-between;
+	display: flex;
+	padding: 0.5vw;
+  padding-left: 2rem;
+}
+
+@media (max-width: 600px) {
+    #nav-bar {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+   ul {
+     padding: 0;
+    
+   }
+  
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+}
+
+#header-img {
+  width: 4rem;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none; 
+}
+
+.nav-link:hover {
+  color: rgb(231, 96, 6);
+  transition: 0.3s ease;
+}
+
+/****hero****/
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.ibb.co/Q8rt3SF/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    height: 47rem;  
+    width: 100%;
+    padding: 0;
+}
+
+h1 {
+  font-family: 'Condiment', cursive;
+  font-size: 13rem;
+  color: yellow;
+  text-shadow: 1rem 1rem green;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+}
+
+@media(max-width: 1250px) { 
+  h1 {
+    font-size: 10rem;
+   
+  }
+}
+
+@media(max-width: 760px) {
+  h1 {
+    font-size: 7rem;
+    top: 50%;
+  }
+}
+
+
+/****about us****/
+
+.mid-section {
+  background-image: url("https://i.ibb.co/fDyhX2g/floor-tile.png");
+  margin-bottom: 6rem;
+}
+
+#about-us {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 20% 7rem;
+  background-color: rgb(255, 165, 0);
+  font-size: 3rem;
+}
+
+.info {
+  font-size: 3rem; 
+  font-family: 'Condiment', cursive;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+/****shop****/
+
+#shop {
+  font-family: 'Condiment', cursive;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.shop-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); 
+  column-gap: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+@media (max-width: 600px) {
+  .shop-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+.shop-item,
+.shop-item-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.shop-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 0 .25rem;
+}
+
+.shop-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding-bottom: 4rem;
+}
+
+img {
+  display: flex;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.fabric {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fabric:hover {
+  transform: scale(1.05)
+}
+
+/****sign-up****/
+
+#video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin: 0 auto;
+}
+
+#video {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sign {
+  font-family: 'Condiment', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem; 
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#email {
+  width: 40%;
+  height: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+@media(max-width: 760px) {
+  #email {
+    font-size: .9rem;
+  }
+}
+
+.email-field {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  Background-color: #B2D732;
+  color: white;
+  border: none;
+  height: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+#submit:hover {
+  background-color: #56690e;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: rgb(255, 165, 0);
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
